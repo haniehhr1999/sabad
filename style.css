@@ -1,0 +1,117 @@
+/* start project =================================================================================== */
+@font-face {
+    font-family: yekan;
+    src: url(assets/Yekan.ttf);
+}
+*{
+    font-family: yekan;
+}
+body{
+    scroll-behavior: smooth;
+}
+.first-color{
+    color: #537188 !important;
+}
+.first-bgcolor{
+    background-color: #537188  !important;
+}
+.second-color{
+    color: #CBB279;
+}
+.second-bgcolor{
+    background-color: #CBB279 !important ;
+}
+.third-color{
+    color: #E1D4BB;
+}
+.third-bgcolor{
+    background-color: #E1D4BB  !important;
+}
+.forth-color{
+    color: #EEEEEE;
+}
+.forth-bgcolor{
+    background-color: #EEEEEE !important ;
+}
+/* css for product boxes in dom ========================================================================= */
+.box{
+    border: 2px solid #EEEEEE;
+}
+button{
+    width: 100%;
+}
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+/* h4{
+    color: rgb(0, 2, 149);
+} */
+
+.sabad{
+    line-height: 60px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+/* css for list product in dom ========================================================================== */
+.sabad-list{
+    margin: auto;
+    width: 80%;
+    height: 300px;
+    border: 2px solid rgb(233, 234, 255);
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    background-color: white;
+    transition: 0.7s;
+    z-index: 33333;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow-y: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.sabad-list.active{
+    height: 0;
+    opacity: 0;
+    border: 1px solid rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+.close-list{
+    top: 10px;
+    left: 20px;
+}
+.close-list span{
+    cursor: pointer;
+    border-radius: 500px;
+}
+.box-li{
+    background: linear-gradient(to right ,rgb(222, 224, 255) , rgb(221, 250, 255));
+    border-radius: 7px;
+}
+.delete-product{
+    cursor: pointer;
+    color: red;
+    transition: 0.5s;
+}
+.delete-product:hover{
+    transform: scale(1.3);
+    font-weight: bold;
+}
+.mdi-menu-right , .mdi-menu-left{
+    cursor: pointer;
+    font-size: 25px;
+}
+.empty{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price{
+    color: rgb(113, 115, 240);
+}
